@@ -4,6 +4,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AddPersonScreenComponent } from './add-person-screen/add-person-screen.component';
+import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopNavigationComponent } from './top-navigation/top-navigation.component';
@@ -20,6 +21,7 @@ import { TopNavigationComponent } from './top-navigation/top-navigation.componen
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
+    AngularMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
