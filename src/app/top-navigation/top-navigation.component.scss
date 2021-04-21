@@ -1,4 +1,34 @@
+a {
+  text-decoration: none;
+}
+
 .example-spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+
+.right-menu {
+  display: none;
+
+  .right-menu__link {
+    display: none;
+
+    &.mat-button {
+        font-size: 0.85em;
+    }
+
+    @media screen and (min-width: 992px) {
+      display: flex;
+      margin: 0 1em;
+    }
   }
-  
+
+  @media screen and (min-width: 992px) {
+    display: flex;
+  }
+}
+
+.menu-icon {
+  @media screen and (min-width: 992px) {
+    display: none;
+  }
+}
