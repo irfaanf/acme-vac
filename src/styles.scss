@@ -10,3 +10,14 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+@media screen and (min-width: 960px){
+  .vac-form {
+  
+    .mat-form-field.vac-form-field {
+      // display: flex;
+      width: 50%;
+    }
+  }
+  
+}
