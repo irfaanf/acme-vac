@@ -11,6 +11,23 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.vac-form {
+  .vac-form-field {
+    &.mat-radio-group {
+      display: flex;
+      flex-direction: column;
+
+      .mat-radio-button {
+        margin: .5em;
+      }
+    }
+  }
+  
+  .vac-radio {
+    display: flex;
+  }
+}
+
 @media screen and (min-width: 960px){
   .vac-form {
   

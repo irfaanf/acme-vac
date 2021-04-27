@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddPersonScreenComponent implements OnInit {
 
+  startDate: Date;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.startDate = new Date(1930, 0, 1);
   }
 
 }

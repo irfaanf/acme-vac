@@ -6,6 +6,7 @@ import { MatButtonToggleModule } from '@angular/material/button-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatChipsModule } from '@angular/material/chips';
+import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatDialogModule } from '@angular/material/dialog';
 import { MatExpansionModule } from '@angular/material/expansion';
@@ -38,6 +39,7 @@ const materialModules = [
   MatInputModule,
   MatAutocompleteModule,
   MatDatepickerModule,
+  MatNativeDateModule,
   MatFormFieldModule,
   MatRadioModule,
   MatSelectModule,
