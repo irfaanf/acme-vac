@@ -17,13 +17,13 @@
             <input matInput placeholder="SA ID Number" type="number">
         </mat-form-field>
 
-        <label id="example-radio-group-label">Gender</label>
         <mat-radio-group aria-labelledby="example-radio-group-label"
             class="vac-form-field vac-form-field-extra-padding">
-            <mat-radio-button>
+            <label id="example-radio-group-label">Gender</label>
+            <mat-radio-button value="male">
                 Male
             </mat-radio-button>
-            <mat-radio-button>
+            <mat-radio-button value="female">
                 Female
             </mat-radio-button>
         </mat-radio-group>
@@ -37,24 +37,24 @@
 
         <mat-divider></mat-divider>
 
-        <label id="ma-have-radio-group-label">Does the patient have medical aid?</label>
         <mat-radio-group aria-labelledby="ma-have-radio-group-label"
             class="vac-form-field vac-form-field-extra-padding">
-            <mat-radio-button>
+            <label id="ma-have-radio-group-label">Does the patient have medical aid?</label>
+            <mat-radio-button value="yes">
                 Yes
             </mat-radio-button>
-            <mat-radio-button>
+            <mat-radio-button value="no">
                 No
             </mat-radio-button>
         </mat-radio-group>
 
-        <label id="ma-main-member-radio-group-label">Is the patient the main member?</label>
         <mat-radio-group aria-labelledby="ma-main-member-radio-group-label"
             class="vac-form-field vac-form-field-extra-padding">
-            <mat-radio-button>
+            <label id="ma-main-member-radio-group-label">Is the patient the main member?</label>
+            <mat-radio-button value="yes">
                 Yes
             </mat-radio-button>
-            <mat-radio-button>
+            <mat-radio-button value="no">
                 No
             </mat-radio-button>
         </mat-radio-group>
