@@ -1,73 +1,78 @@
-<h1>Add New Patient</h1>
+<div class="add-patient-screen">
+    <h1>Add New Patient</h1>
 
-<form action="#" class="vac-form add-person-form">
-    <mat-form-field appearance="fill" class="vac-form-field">
-        <mat-label>First Name</mat-label>
-        <input matInput placeholder="First Name">
-    </mat-form-field>
+    <form action="#" class="vac-form add-person-form">
+        <mat-form-field appearance="fill" class="vac-form-field">
+            <mat-label>First Name</mat-label>
+            <input matInput placeholder="First Name">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="vac-form-field">
-        <mat-label>Last Name</mat-label>
-        <input matInput placeholder="Last Name">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="vac-form-field">
+            <mat-label>Last Name</mat-label>
+            <input matInput placeholder="Last Name">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="vac-form-field">
-        <mat-label>SA ID Number</mat-label>
-        <input matInput placeholder="SA ID Number" type="number">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="vac-form-field">
+            <mat-label>SA ID Number</mat-label>
+            <input matInput placeholder="SA ID Number" type="number">
+        </mat-form-field>
 
-    <label id="example-radio-group-label">Gender</label>
-    <mat-radio-group aria-labelledby="example-radio-group-label" class="vac-form-field vac-form-field-extra-padding">
-        <mat-radio-button>
-            Male
-        </mat-radio-button>
-        <mat-radio-button>
-            Female
-        </mat-radio-button>
-    </mat-radio-group>
+        <label id="example-radio-group-label">Gender</label>
+        <mat-radio-group aria-labelledby="example-radio-group-label"
+            class="vac-form-field vac-form-field-extra-padding">
+            <mat-radio-button>
+                Male
+            </mat-radio-button>
+            <mat-radio-button>
+                Female
+            </mat-radio-button>
+        </mat-radio-group>
 
-    <mat-form-field appearance="fill" class="vac-form-field">
-        <mat-label>Date of birth</mat-label>
-        <input matInput [matDatepicker]="picker">
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker [startAt]="startDate"></mat-datepicker>
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="vac-form-field">
+            <mat-label>Date Of Birth</mat-label>
+            <input matInput [matDatepicker]="picker">
+            <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+            <mat-datepicker #picker [startAt]="startDate"></mat-datepicker>
+        </mat-form-field>
 
-    <mat-divider></mat-divider>
+        <mat-divider></mat-divider>
 
-    <label id="ma-have-radio-group-label">Does the patient have medical aid?</label>
-    <mat-radio-group aria-labelledby="ma-have-radio-group-label" class="vac-form-field vac-form-field-extra-padding">
-        <mat-radio-button>
-            Yes
-        </mat-radio-button>
-        <mat-radio-button>
-            No
-        </mat-radio-button>
-    </mat-radio-group>
+        <label id="ma-have-radio-group-label">Does the patient have medical aid?</label>
+        <mat-radio-group aria-labelledby="ma-have-radio-group-label"
+            class="vac-form-field vac-form-field-extra-padding">
+            <mat-radio-button>
+                Yes
+            </mat-radio-button>
+            <mat-radio-button>
+                No
+            </mat-radio-button>
+        </mat-radio-group>
 
-    <label id="ma-main-member-radio-group-label">Is the patient the main member?</label>
-    <mat-radio-group aria-labelledby="ma-main-member-radio-group-label" class="vac-form-field vac-form-field-extra-padding">
-        <mat-radio-button>
-            Yes
-        </mat-radio-button>
-        <mat-radio-button>
-            No
-        </mat-radio-button>
-    </mat-radio-group>
+        <label id="ma-main-member-radio-group-label">Is the patient the main member?</label>
+        <mat-radio-group aria-labelledby="ma-main-member-radio-group-label"
+            class="vac-form-field vac-form-field-extra-padding">
+            <mat-radio-button>
+                Yes
+            </mat-radio-button>
+            <mat-radio-button>
+                No
+            </mat-radio-button>
+        </mat-radio-group>
 
-    <mat-form-field appearance="fill" class="vac-form-field">
-        <mat-label>Medical Aid Provider</mat-label>
-        <input matInput placeholder="Medical Aid Provider">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="vac-form-field">
+            <mat-label>Medical Aid Provider</mat-label>
+            <input matInput placeholder="Medical Aid Provider">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="vac-form-field">
-        <mat-label>Medical Aid Plan/Scheme</mat-label>
-        <input matInput placeholder="Medical Aid Plan/Scheme">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="vac-form-field">
+            <mat-label>Medical Aid Plan/Scheme</mat-label>
+            <input matInput placeholder="Medical Aid Plan/Scheme">
+        </mat-form-field>
 
-    <mat-form-field appearance="fill" class="vac-form-field">
-        <mat-label>Medical Aid Number</mat-label>
-        <input matInput placeholder="Medical Aid Number" type="number">
-    </mat-form-field>
+        <mat-form-field appearance="fill" class="vac-form-field">
+            <mat-label>Medical Aid Number</mat-label>
+            <input matInput placeholder="Medical Aid Number" type="number">
+        </mat-form-field>
 
-</form>
+    </form>
+</div>

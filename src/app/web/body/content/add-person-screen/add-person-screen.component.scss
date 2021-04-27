@@ -1,4 +1,8 @@
-.add-person-form {
-    display: flex;
-    flex-direction: column;
+.add-patient-screen{
+    padding: 1rem 3rem;
+
+    .add-person-form {
+        display: flex;
+        flex-direction: column;
+    }
 }
