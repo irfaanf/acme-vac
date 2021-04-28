@@ -1,10 +1,10 @@
 <div class="add-patient-screen">
     <h1>Add New Patient</h1>
 
-    <form action="#" class="vac-form add-person-form">
+    <form (ngSubmit)="onSubmit()" class="vac-form add-person-form">
         <mat-form-field appearance="fill" class="vac-form-field">
             <mat-label>First Name</mat-label>
-            <input matInput placeholder="First Name">
+            <input matInput placeholder="First Name" [(ngModel)]="patient.firstName" name="firstName">
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="vac-form-field">
@@ -74,5 +74,8 @@
             <input matInput placeholder="Medical Aid Number" type="number">
         </mat-form-field>
 
+        <div>
+            <button mat-flat-button color="primary" type="submit">Submit</button>
+        </div>
     </form>
 </div>
