@@ -1,3 +1,4 @@
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { FormsModule } from '@angular/forms';
@@ -9,12 +10,14 @@ import { IConfig, NgxMaskModule } from 'ngx-mask';
 import { AngularMaterialModule } from './angular-material/angular-material.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PatientService } from './service/patient/patient.service';
 import { BodyComponent } from './web/body/body.component';
 import { AddPersonScreenComponent } from './web/body/content/add-person-screen/add-person-screen.component';
 import { ContentComponent } from './web/body/content/content.component';
 import { DesktopSecondaryNavigationComponent } from './web/body/secondary-navigation/desktop-secondary-navigation/desktop-secondary-navigation.component';
 import { MobileSecondaryNavigationComponent } from './web/body/secondary-navigation/mobile-secondary-navigation/mobile-secondary-navigation.component';
 import { SecondaryNavigationComponent } from './web/body/secondary-navigation/secondary-navigation.component';
+import { PatientListComponent } from './web/common/patient/patient-list/patient-list.component';
 import { TopNavigationComponent } from './web/top-navigation/top-navigation.component';
 import { WebComponent } from './web/web.component';
 
@@ -31,6 +34,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     ContentComponent,
     MobileSecondaryNavigationComponent,
     DesktopSecondaryNavigationComponent,
+    PatientListComponent,
   ],
   imports: [
     BrowserModule,
@@ -41,9 +45,10 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     AngularMaterialModule,
     FlexLayoutModule,
     FormsModule,
+    HttpClientModule,
     NgxMaskModule.forRoot(),
   ],
-  providers: [],
+  providers: [PatientService],
   bootstrap: [AppComponent],
 })
 export class AppModule { }
