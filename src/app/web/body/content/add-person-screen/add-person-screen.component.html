@@ -9,16 +9,16 @@
 
         <mat-form-field appearance="fill" class="vac-form-field">
             <mat-label>Last Name</mat-label>
-            <input matInput placeholder="Last Name">
+            <input matInput placeholder="Last Name" [(ngModel)]="patient.lastName" name="lastName">
         </mat-form-field>
 
         <mat-form-field appearance="fill" class="vac-form-field">
             <mat-label>SA ID Number</mat-label>
-            <input matInput placeholder="SA ID Number" type="text" mask="000000 0000 000" inputmode="tel">
+            <input matInput placeholder="SA ID Number" [(ngModel)]="patient.saIdNumber" name="saIdNumber" type="text" mask="000000 0000 000" inputmode="tel">
         </mat-form-field>
 
         <mat-radio-group aria-labelledby="example-radio-group-label"
-            class="vac-form-field vac-form-field-extra-padding">
+            class="vac-form-field vac-form-field-extra-padding" [(ngModel)]="patient.gender" name="gender" >
             <label id="example-radio-group-label">Gender</label>
             <mat-radio-button value="male">
                 Male
@@ -30,7 +30,7 @@
 
         <mat-form-field appearance="fill" class="vac-form-field">
             <mat-label>Date Of Birth</mat-label>
-            <input matInput [matDatepicker]="picker">
+            <input matInput [matDatepicker]="picker" [(ngModel)]="patient.dob" name="dob" >
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker [startAt]="startDate"></mat-datepicker>
         </mat-form-field>
