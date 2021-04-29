@@ -11,7 +11,7 @@ export class PatientService {
   private patientsUrl: string;
 
   constructor(private httpClient: HttpClient) {
-    this.patientsUrl = 'http://localhost:8080/patients';
+    this.patientsUrl = 'http://localhost:8080/ifconference/patients';
   }
 
   public findAll(): Observable<Patient[]> {
