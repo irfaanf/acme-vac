@@ -35,46 +35,7 @@
             <mat-datepicker #picker [startAt]="startDate"></mat-datepicker>
         </mat-form-field>
 
-        <mat-divider></mat-divider>
-
-        <mat-radio-group aria-labelledby="ma-have-radio-group-label"
-            class="vac-form-field vac-form-field-extra-padding">
-            <label id="ma-have-radio-group-label">Does the patient have medical aid?</label>
-            <mat-radio-button value="yes">
-                Yes
-            </mat-radio-button>
-            <mat-radio-button value="no">
-                No
-            </mat-radio-button>
-        </mat-radio-group>
-
-        <mat-radio-group aria-labelledby="ma-main-member-radio-group-label"
-            class="vac-form-field vac-form-field-extra-padding">
-            <label id="ma-main-member-radio-group-label">Is the patient the main member?</label>
-            <mat-radio-button value="yes">
-                Yes
-            </mat-radio-button>
-            <mat-radio-button value="no">
-                No
-            </mat-radio-button>
-        </mat-radio-group>
-
-        <mat-form-field appearance="fill" class="vac-form-field">
-            <mat-label>Medical Aid Provider</mat-label>
-            <input matInput placeholder="Medical Aid Provider">
-        </mat-form-field>
-
-        <mat-form-field appearance="fill" class="vac-form-field">
-            <mat-label>Medical Aid Plan/Scheme</mat-label>
-            <input matInput placeholder="Medical Aid Plan/Scheme">
-        </mat-form-field>
-
-        <mat-form-field appearance="fill" class="vac-form-field">
-            <mat-label>Medical Aid Number</mat-label>
-            <input matInput placeholder="Medical Aid Number" type="number">
-        </mat-form-field>
-
-        <div>
+         <div>
             <button mat-flat-button color="primary" type="submit">Submit</button>
         </div>
     </form>
