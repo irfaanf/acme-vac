@@ -33,9 +33,10 @@
             <input matInput [matDatepicker]="picker" [(ngModel)]="patient.dob" name="dob" >
             <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
             <mat-datepicker #picker [startAt]="startDate"></mat-datepicker>
+            <mat-hint align="start">E.g. 1961/08/30</mat-hint>
         </mat-form-field>
 
-         <div>
+         <div class="submit-button-area">
             <button mat-flat-button color="primary" type="submit">Submit</button>
         </div>
     </form>
