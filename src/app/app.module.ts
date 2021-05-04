@@ -22,6 +22,7 @@ import { SecondaryNavigationComponent } from './web/body/secondary-navigation/se
 import { PatientListComponent } from './web/common/patient/patient-list/patient-list.component';
 import { TopNavigationComponent } from './web/top-navigation/top-navigation.component';
 import { WebComponent } from './web/web.component';
+import { ManageAllPatientsComponent } from './web/body/content/manage-all-patients/manage-all-patients.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
@@ -39,6 +40,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     PatientListComponent,
     DashboardComponent,
     ManagePatientComponent,
+    ManageAllPatientsComponent,
   ],
   imports: [
     BrowserModule,
