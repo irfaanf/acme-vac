@@ -14,13 +14,14 @@ import { PatientService } from './service/patient/patient.service';
 import { BodyComponent } from './web/body/body.component';
 import { AddPersonScreenComponent } from './web/body/content/add-person-screen/add-person-screen.component';
 import { ContentComponent } from './web/body/content/content.component';
+import { DashboardComponent } from './web/body/content/dashboard/dashboard.component';
+import { ManagePatientComponent } from './web/body/content/manage-patient/manage-patient.component';
 import { DesktopSecondaryNavigationComponent } from './web/body/secondary-navigation/desktop-secondary-navigation/desktop-secondary-navigation.component';
 import { MobileSecondaryNavigationComponent } from './web/body/secondary-navigation/mobile-secondary-navigation/mobile-secondary-navigation.component';
 import { SecondaryNavigationComponent } from './web/body/secondary-navigation/secondary-navigation.component';
 import { PatientListComponent } from './web/common/patient/patient-list/patient-list.component';
 import { TopNavigationComponent } from './web/top-navigation/top-navigation.component';
 import { WebComponent } from './web/web.component';
-import { DashboardComponent } from './web/body/content/dashboard/dashboard.component';
 
 export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
 
@@ -37,6 +38,7 @@ export const options: Partial<IConfig> | (() => Partial<IConfig>) = null;
     DesktopSecondaryNavigationComponent,
     PatientListComponent,
     DashboardComponent,
+    ManagePatientComponent,
   ],
   imports: [
     BrowserModule,

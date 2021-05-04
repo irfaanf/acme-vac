@@ -11,6 +11,11 @@ body {
 	font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+.av-screen {
+	padding: 1rem 3rem;
+	min-height: 100vh;
+}
+
 .vac-form {
 	.vac-form-field {
 		&.vac-form-field-extra-padding {
