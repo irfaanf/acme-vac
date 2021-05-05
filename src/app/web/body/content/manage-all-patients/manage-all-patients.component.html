@@ -1,7 +1,7 @@
 <div class="av-screen">
     <h1>Manage All</h1>
 
-    <mat-table [dataSource]="dataSource" class="manage-all-patients-table mat-elevation-z8">
+    <mat-table [dataSource]="dataSource" class="av-table manage-all-patients-table mat-elevation-z8">
 
         <!-- Position Column -->
         <ng-container matColumnDef="firstName">
@@ -20,9 +20,12 @@
         </ng-container>
 
         <ng-container matColumnDef="manage">
-            <mat-header-cell *matHeaderCellDef> Manage </mat-header-cell>
-            <mat-cell *matCellDef="let patient"> 
-                <button mat-flat-button color="primary">Manage</button> 
+            <mat-header-cell *matHeaderCellDef fxLayoutAlign="end center"> Manage </mat-header-cell>
+            <mat-cell *matCellDef="let patient" fxLayoutAlign="end center"> 
+                <button mat-icon-button color="primary" aria-label="Manage Patient" fxShow fxHide.md fxHide.lg fxHide.xl>
+                    <mat-icon>edit</mat-icon>
+                </button>
+                <button mat-flat-button color="primary" fxHide fxShow.md fxShow.lg fxShow.xl>Manage</button> 
             </mat-cell>
         </ng-container>
 
