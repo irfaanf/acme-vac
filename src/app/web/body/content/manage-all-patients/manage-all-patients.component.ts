@@ -13,7 +13,7 @@ export class ManageAllPatientsComponent implements OnInit {
 	displayedColumns: string[];
 
 	constructor(private patientService: PatientService) {
-		this.displayedColumns = ['firstName', 'lastName'];
+		this.displayedColumns = ['firstName', 'lastName', 'risk', 'manage'];
 	}
 
 	ngOnInit(): void {
