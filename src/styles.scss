@@ -1,5 +1,6 @@
 @import "./theme-one.scss";
 @import "~@angular/material/theming";
+@import "./breakpoints.scss";
 @include mat-core();
 
 html,
