@@ -13,7 +13,7 @@ body {
 }
 
 .av-screen {
-	padding: 1rem 3rem;
+	padding: 1rem;
 	min-height: 100vh;
 }
 
@@ -46,7 +46,11 @@ body {
 	margin: 3em 0;
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: $MEDIUM) {
+	.av-screen {
+		padding: 1rem 3rem;
+	}
+	
 	.vac-form {
 		.vac-form-field {
 			width: 50%;
