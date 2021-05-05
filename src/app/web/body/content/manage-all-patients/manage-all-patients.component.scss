@@ -1,3 +1,9 @@
+@import "/src/breakpoints.scss";
+
 .manage-all-patients-table {
-    width: 100%;
+}
+
+@media screen and (min-width: $LARGE) {
+    .manage-all-patients-table {
+    }
 }
