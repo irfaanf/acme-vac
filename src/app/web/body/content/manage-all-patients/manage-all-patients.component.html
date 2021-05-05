@@ -1,30 +1,30 @@
 <div class="av-screen">
     <h1>Manage All</h1>
 
-    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <mat-table [dataSource]="dataSource" class="manage-all-patients-table mat-elevation-z8">
 
         <!-- Position Column -->
         <ng-container matColumnDef="firstName">
-            <th mat-header-cell *matHeaderCellDef> First Name </th>
-            <td mat-cell *matCellDef="let patient"> {{patient.firstName}} </td>
+            <mat-header-cell *matHeaderCellDef> First Name </mat-header-cell>
+            <mat-cell *matCellDef="let patient"> {{patient.firstName}} </mat-cell>
         </ng-container>
 
         <ng-container matColumnDef="lastName">
-            <th mat-header-cell *matHeaderCellDef> Last Name </th>
-            <td mat-cell *matCellDef="let patient"> {{patient.lastName}} </td>
+            <mat-header-cell *matHeaderCellDef> Last Name </mat-header-cell>
+            <mat-cell *matCellDef="let patient"> {{patient.lastName}} </mat-cell>
         </ng-container>
-        
+
         <!-- <ng-container matColumnDef="risk">
-            <th mat-header-cell *matHeaderCellDef> Risk </th>
-            <td mat-cell *matCellDef="let patient"> {{patient.risk}} </td>
+            <mat-header-cell *matHeaderCellDef> Risk </mat-header-cell>
+            <mat-cell *matCellDef="let patient"> {{patient.risk}} </mat-cell>
         </ng-container> -->
 
         <!-- <ng-container matColumnDef="symbol">
-            <th mat-header-cell *matHeaderCellDef> Manage </th>
-            <td mat-cell *matCellDef="let patient"> <button mat-button>Manage</button> </td>
+            <mat-header-cell *matHeaderCellDef> Manage </mat-header-cell>
+            <mat-cell *matCellDef="let patient"> <button mat-button>Manage</button> </mat-cell>
         </ng-container> -->
 
-        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
-        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
-    </table>
+        <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+        <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+    </mat-table>
 </div>
